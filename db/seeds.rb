@@ -30,7 +30,7 @@ puts "Created 5 skills"
     subtitle: "The Subtitle #{portfolios}",
     body: "Amazing work numero #{portfolios}",
     thumb_image: "http://placehold.it/300x300",
-    main_image: "http://placehold.it/400x600"
+    main_image: "http://placehold.it/600x400"
   )
 end
 
