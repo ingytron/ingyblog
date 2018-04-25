@@ -1,5 +1,6 @@
 class BlogsController < ApplicationController
-  before_action :set_blog, only: [:show, :edit, :update, :destroy]
+  before_action :set_blog, only: [:show, :edit, :update, :destroy, :toggle_visibility]
+  # after_action :redirect_to blogs_url #, only: [ :create ]
 
   # GET /blogs
   # GET /blogs.json
@@ -59,6 +60,11 @@ class BlogsController < ApplicationController
       format.html { redirect_to blogs_url, notice: 'Blog was successfully destroyed.' }
       format.json { head :no_content }
     end
+  end
+
+  def toggle_visibility
+    @blog.published? ? @blog.draft! : @blog.published!
+    redirect_to blogs_url, notice: 'Post visibility updated.'
   end
 
   private
