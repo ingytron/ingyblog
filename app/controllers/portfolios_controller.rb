@@ -1,5 +1,7 @@
 class PortfoliosController < ApplicationController
   def index
+    # @portfolio_items = Portfolio.javascript
+    # @portfolio_items = Portfolio.rails_projects
     @portfolio_items = Portfolio.all
   end
 
