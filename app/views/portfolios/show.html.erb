@@ -4,4 +4,11 @@
 <h2><%= @portfolio_item.title %></h2>
 <h4><%= @portfolio_item.subtitle %></h4>
 <p><%= @portfolio_item.body %></p>
+
+<h2>Built with</h2>
+
+<% @portfolio_item.technologies.each do |t| %>
+<p><%= t.name %></p>
+<% end %>
+
 <%=  @portfolio_item.inspect %>
