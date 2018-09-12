@@ -13,3 +13,11 @@
  *= require_tree .
  *= require_self
  */
+
+ @import url('https://fonts.googleapis.com/css?family=Exo+2');
+
+h1, h2, h3, h4, h5, p, a { font-family: 'Exo 2', sans-serif; }
+
+a, a:visited {color: #bada55;}
+
+.main {margin: 50px;}
