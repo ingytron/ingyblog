@@ -1,0 +1,13 @@
+<div>
+
+<h1>Latest work:</h1>
+
+<%= @recents %>
+
+<%= @portfolio_items.each do |s| %>
+  <h2><%= link_to s.title, portfolio_show_path(s) %></h2>
+  <%= image_tag s.thumb_image || "http://placehold.it/300x300" %>
+  <p><%= s.subtitle %></p>
+<% end %>
+
+</div>

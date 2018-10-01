@@ -18,6 +18,8 @@
 
 h1, h2, h3, h4, h5, p, a { font-family: 'Exo 2', sans-serif; }
 
-a, a:visited {color: #bada55;}
+a, a:visited {color: #bada55; text-decoration: none;}
 
-.main {margin: 50px;}
+a li { }
+
+.main {margin: 0 auto; max-width: 60%; padding: 50px;}
