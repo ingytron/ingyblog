@@ -7,6 +7,7 @@ class PagesController < ApplicationController
   def about
   end
 
-  def contact
+  def edit
   end
+
 end
