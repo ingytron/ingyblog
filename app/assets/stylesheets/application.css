@@ -14,7 +14,7 @@
  *= require_self
  */
 
- @import url('https://fonts.googleapis.com/css?family=Exo+2');
+@import url('https://fonts.googleapis.com/css?family=Exo+2');
 
 h1, h2, h3, h4, h5, p, a { font-family: 'Exo 2', sans-serif; }
 
@@ -22,4 +22,13 @@ a, a:visited {color: #bada55; text-decoration: none;}
 
 a li { }
 
-.main {margin: 0 auto; max-width: 60%; padding: 50px;}
+.container {display: grid | inline-grid;
+            grid-template:
+              [row1-start] "header header header" 25px [row1-end]
+              [row2-start] "footer footer footer" 25px [row2-end]
+              / auto 50px auto;
+          }
+
+.main {margin: 0 auto; max-width: 60%; padding: 50px; }
+
+.nav { grid-column-start: 3 }
