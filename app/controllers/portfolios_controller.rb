@@ -1,4 +1,6 @@
 class PortfoliosController < ApplicationController
+  layout "portfolio"
+
   def index
     # @portfolio_items = Portfolio.javascript
     # @portfolio_items = Portfolio.rails_projects

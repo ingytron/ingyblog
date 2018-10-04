@@ -1,6 +1,7 @@
 class BlogsController < ApplicationController
   before_action :set_blog, only: [:show, :edit, :update, :destroy, :toggle_visibility]
   # after_action :redirect_to blogs_url #, only: [ :create ]
+  layout "blog"
 
   # GET /blogs
   # GET /blogs.json

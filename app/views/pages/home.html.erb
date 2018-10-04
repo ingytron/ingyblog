@@ -1,12 +1,16 @@
 <h1>Welcome</h1>
 <p>This is my home page with all sorts of good things on it</p>
 
-<h1>Blog Posts</h1>
+<div class="blog_snippets">
+  <h1>Blog Posts</h1>
 
-
-<p>They can go here</p>
-
+  <%= blog_snippets %>
+</div>
 
 <h1>Recent Work</h1>
 
 <p>Portfolio items here</p>
+
+<%= content_tag :div, class: "homepage" do %>
+  Hello from this paragraph tag
+<% end %>
