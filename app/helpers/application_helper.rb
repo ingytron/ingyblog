@@ -13,6 +13,14 @@ module ApplicationHelper
     end
   end
 
+  def blog_admin
+    # if current_user.is_a?(User)
+    #   link_to "This post is #{@blog.status}", toggle_visibility_blog_path(blog)
+    #   link_to 'Edit', edit_blog_path(blog)
+    #   link_to 'Delete', blog, method: :delete, data: { confirm: 'Are you sure?' }
+    # end
+  end
+
   def blog_snippets
     content_tag(:p, "test content", class: "homepage")
   end

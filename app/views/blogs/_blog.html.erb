@@ -1,0 +1,14 @@
+
+<div>
+  <h2><%= blog.title.upcase %></h2>
+  <%= blog.body %>
+
+  <%= blog_admin %>
+
+  <ul>
+    <li><%= link_to "This post is #{blog.status}", toggle_visibility_blog_path(blog) %></li>
+    <li><%= link_to 'Edit', edit_blog_path(blog) %></li>
+    <li><%= link_to 'Delete', blog, method: :delete, data: { confirm: 'Are you sure?' } %></li>
+  </ul>
+
+</div>

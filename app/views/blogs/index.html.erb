@@ -4,17 +4,8 @@
 <h3>Recent Writings</h3>
 
     <div>
-    <% @blogs.each do |blog| %>
-
-      <h2><%= link_to blog.title, blog %></h2>
-      <div><p><%= blog.body %></p></div>
-      <ul>
-        <li><%= link_to blog.status, toggle_visibility_blog_path(blog) %></li
-        <li><%= link_to 'Edit', edit_blog_path(blog) %></li>
-        <li><%= link_to 'Delete', blog, method: :delete, data: { confirm: 'Are you sure?' } %></li>
-      </ul>
-    <% end %>
-  </div>
+      <%= render @blogs %>
+    </div>
 
 <br>
 
