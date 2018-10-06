@@ -7,8 +7,6 @@
 
 <h2>Built with</h2>
 
-<% @portfolio_item.technologies.each do |t| %>
-<p><%= t.name %></p>
+<% @portfolio_item.technologies.each do |tech| %>
+  <p><%= tech.name %></p>
 <% end %>
-
-<%=  @portfolio_item.inspect %>

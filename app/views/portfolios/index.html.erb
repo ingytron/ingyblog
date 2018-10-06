@@ -2,17 +2,7 @@
 
 <h1>Portfolio Items</h1>
 
-<%= link_to "Create New", new_portfolio_path %>
-
-<h4>Latest work:</h4>
-<%= @portfolio_items.each do |s| %>
-  <h2><%= link_to s.title, portfolio_show_path(s) %></h2>
-  <p><%= s.subtitle %></p>
-  <p><%= s.body %></p>
-  <%= image_tag s.thumb_image || "http://placehold.it/300x300" %>
-  <%= link_to "Edit", edit_portfolio_path(s) %>
-  <%= link_to "Delete", portfolio_path(s), method: :delete, data: {confirm: 'Are you super duper sure? No backsies'} %>
-<% end %>
+<%= render partial: 'portfolio_item', collection: @portfolio_items %>
 
 <h1>Things to include here</h1>
 <ul>
